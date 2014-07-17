@@ -8,9 +8,25 @@ namespace codeeval.easy
     {
         //static void Main(string[] args)
         //{
-        //    foreach (var a in from list in File.ReadAllLines(args[0]).Select(x => x.Split(',')) let g = list.GroupBy(i => i) select g.FirstOrDefault(x => x.Count() >= list.Count()/2))
+        //    foreach (var b in File.ReadAllLines(args[0]).Select(x => x.Split(',')))
         //    {
-        //        Console.WriteLine(a == null?"None":a.Key);
+        //        bool yes = false;
+        //        int n = 0;
+        //        int[] nums = new int[100];
+        //        foreach (var s in b)
+        //        {
+        //            nums[int.Parse(s)]++;
+        //        }
+        //        for (int i = 0; i < nums.Length; i++)
+        //        {
+        //            if (nums[i] >= b.Count()/2)
+        //            {
+        //                n = i;
+        //                yes = true;
+        //                break;
+        //            }
+        //        }
+        //        Console.WriteLine(yes?n.ToString():"None");
         //    }
         //}
     }
