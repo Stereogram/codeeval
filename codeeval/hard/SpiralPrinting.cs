@@ -6,23 +6,21 @@ namespace codeeval.hard
 {
     public class SpiralPrinting
     {
-        static void Main(string[] args)
-        {
-            foreach (var result in File.ReadAllLines(args[0]).Select(x => x.Split(';')))
-            {
-                int n = int.Parse(result[0]);
-                int m = int.Parse(result[1]);
-                string[] arr = result[2].Trim().Split(' ');
-                string[,] map = new string[n, m];
-                for (int i = 0; i < n; i++)
-                    for (int j = 0; j < m; j++)
-                        map[i, j] = arr[(i * m) + j];
-                
-                    PrintSpiral(map, m, n);
-                
-                
-            }
-        }
+        //static void Main(string[] args)
+        //{
+        //    foreach (var result in File.ReadAllLines(args[0]).Select(x => x.Split(';')))
+        //    {
+        //        int n = int.Parse(result[0]);
+        //        int m = int.Parse(result[1]);
+        //        string[] arr = result[2].Trim().Split(' ');
+        //        string[,] map = new string[n, m];
+        //        for (int i = 0; i < n; i++)
+        //            for (int j = 0; j < m; j++)
+        //                map[i, j] = arr[(i * m) + j];
+        //        
+        //            PrintSpiral(map, m, n);
+        //    }
+        //}
 
         //http://stackoverflow.com/questions/726756/print-two-dimensional-array-in-spiral-order
         // function to print the top-right peel of the matrix and 
