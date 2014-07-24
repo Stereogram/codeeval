@@ -9,14 +9,23 @@ namespace codeeval.hard
     {
         //private static void Main(string[] args)
         //{
-        //    foreach (var result in File.ReadAllLines(args[0]).Select(x => x.Split(';')))
+        //    foreach (var result in File.ReadAllLines(args[0]).Select(x => x.Split(';')).ToList())
         //    {
-        //        var list0 = result[0].ToList().AllCombinations().Select(x => new string(x.ToArray()));
-        //        var list1 = result[1].ToList().AllCombinations().Select(x => new string(x.ToArray()));
-        //        foreach (var word in list0.Where(list1.Contains))
+        //        for (int i = result[0].Length; i >= 0; i--)
         //        {
-        //            Console.WriteLine(word.ToArray());
-        //            break;
+        //            var list0 = result[0];
+        //            var list1 = result[1];
+        //            var common = list0.Intersect(list1);
+        //            string s0 = list0.Where(common.Contains).Aggregate(string.Empty, (current, c) => current + c);
+        //            string s1 = list1.Where(common.Contains).Aggregate(string.Empty, (current, c) => current + c);
+        //            var test0 = s0.Combinations(i).Select(x => new string(x.ToArray()));
+        //            var test1 = s1.Combinations(i).Select(x => new string(x.ToArray()));
+        //            var inter = test0.Intersect(test1);
+        //            if (inter.Any())
+        //            {
+        //                Console.WriteLine(inter.First());
+        //                break;
+        //            }
         //        }
         //    }
         //}
