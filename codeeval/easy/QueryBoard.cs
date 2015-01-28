@@ -5,35 +5,35 @@ namespace codeeval.easy
 {
     public class QueryBoard
     {
-        private static readonly byte [,] _board = new byte[256,256]; 
+        private static readonly byte [,] _board = new byte[256,256];
 
-        private static void Main(string[] args)
-        {
-            foreach (var line in File.ReadAllLines(args[0]))
-            {
-                var arg = line.Split(' ');
-                string command = arg[0];
-                byte a = byte.Parse(arg[1]);
-                byte b;
-                switch (command)
-                {
-                    case "SetCol":
-                        b = byte.Parse(arg[2]);
-                        SetCol(a,b);
-                        break;
-                    case "SetRow":
-                        b = byte.Parse(arg[2]);
-                        SetRow(a,b);
-                        break;
-                    case "QueryCol":
-                        QueryCol(a);
-                        break;
-                    case "QueryRow":
-                        QueryRow(a);
-                        break;
-                }
-            }
-        }
+        //private static void Main(string[] args)
+        //{
+        //    foreach (var line in File.ReadAllLines(args[0]))
+        //    {
+        //        var arg = line.Split(' ');
+        //        string command = arg[0];
+        //        byte a = byte.Parse(arg[1]);
+        //        byte b;
+        //        switch (command)
+        //        {
+        //            case "SetCol":
+        //                b = byte.Parse(arg[2]);
+        //                SetCol(a,b);
+        //                break;
+        //            case "SetRow":
+        //                b = byte.Parse(arg[2]);
+        //                SetRow(a,b);
+        //                break;
+        //            case "QueryCol":
+        //                QueryCol(a);
+        //                break;
+        //            case "QueryRow":
+        //                QueryRow(a);
+        //                break;
+        //        }
+        //    }
+        //}
 
         private static void SetCol(int j, byte x)
         {

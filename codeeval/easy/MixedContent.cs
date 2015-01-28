@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 
 namespace codeeval.easy
 {
@@ -21,7 +20,13 @@ namespace codeeval.easy
         //            else
         //                words.Add(word);
         //        }
-        //        Console.WriteLine(string.Join(",",words)+"|"+string.Join(",",nums));
+        //        if (words.Count > 0)
+        //            Console.Write(string.Join(",", words));
+        //        if( words.Count > 0 && nums.Count > 0)
+        //            Console.Write("|");
+        //        if (nums.Count > 0)
+        //            Console.Write(string.Join(",", nums));
+        //        Console.WriteLine();
         //    }
         //}
     }
