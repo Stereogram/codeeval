@@ -40,7 +40,7 @@ namespace codeeval.hard
             //*assumption* most frequent character will be the space.
             char space = (char)freq.Aggregate((l, r) => l.Value > r.Value ? l : r).Key;
             string word = string.Empty;
-            //construct list of words, seperated by the 'space'.
+            //construct list of words, separated by the 'space'.
             foreach (char letter in msg.Select(s => (char)s))
             {
                 if (letter == space)

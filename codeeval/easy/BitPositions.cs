@@ -8,13 +8,15 @@ namespace codeeval.easy
     {
         //private static void Main(string[] args)
         //{
-        //    foreach (var line in File.ReadAllLines(args[0]))
+        //    foreach (var input in File.ReadAllLines(args[0]).Select(x => x.Split(',')))
         //    {
-        //        var arg = line.Split(',');
-        //        var test = int.Parse(arg[0]);
-        //        var binary = Convert.ToString(test, 2);
+        //        var n = int.Parse(input[0]);
+        //        var binary = Convert.ToString(n, 2);
         //        var t = binary.Reverse().ToArray();
-        //        Console.WriteLine(t[int.Parse(arg[1])-1]==t[int.Parse(arg[2])-1]?"true":"false");
+        //        //-1 because "1 based".
+        //        int p1 = int.Parse(input[1]) - 1;
+        //        int p2 = int.Parse(input[2]) - 1;
+        //        Console.WriteLine(t[p1] == t[p2] ? "true" : "false");
         //    }
         //}
     }
