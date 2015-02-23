@@ -13,13 +13,13 @@ namespace codeeval.moderate
             "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"
         }; 
 
-        private static void Main(string[] args)
-        {
-            foreach (var line in File.ReadAllLines(args[0]))
-            {
-                Console.WriteLine(Split(line).Sum(x => Contains(x, _list)));
-            }
-        }
+        //private static void Main(string[] args)
+        //{
+        //    foreach (var line in File.ReadAllLines(args[0]))
+        //    {
+        //        Console.WriteLine(Split(line).Sum(x => Contains(x, _list)));
+        //    }
+        //}
 
         static int Contains(IEnumerable<string> a, IEnumerable<string> b)
         {
